@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" 
+    >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="@string/bienvenue"
+        android:textSize="30sp"
+        
+        />
+    
+    <Button 
+        android:id="@+id/bt_parcourir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:text="@string/parcourir_cartes"
+        android:onClick="parcourirCartes"
+        />
+    <Button 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:padding="25dp"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="@string/jeux"
+        />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" 
+    android:layout_gravity="center"
+    android:layout_marginTop="35dp">
+    
+    <Button 
+        android:id="@+id/bt_instructions"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/label_instructions"
+        android:onClick="voirInstructions"
+        />
+    <Button 
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="@string/label_apropos"
+        android:onClick="voirApropos"
+        />
+    </LinearLayout>
+
+   <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/hello_world" />-->
+
+</LinearLayout>
