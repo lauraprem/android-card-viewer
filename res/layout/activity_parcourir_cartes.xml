@@ -13,6 +13,12 @@
 	tools:context=".ParcourirCartesActivity"
 
     >
+    
+    <ListView >
+        android:id="@+id/MainActivityListViewCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
 
     <ImageView
         android:contentDescription="@string/balise_description"
